@@ -1,5 +1,12 @@
 # WebRoyale
-My love for ClashRoyale is reflected in this website.
+<h2>My love for ClashRoyale is reflected in this website.</h2>
+<h3>
+This WebApp consists of:-
+<ul>
+<li>Blog-In which Admin can post any contents and guest user can give feedback as comments.</li>
+<li>Cards-Cards available in ClashRoyale can be seen here with all its details-name,arena,elixir,type,rarity,etc...</li>
+<li>Arena-All Arenas in ClashRoyale Game and New Cards found from that arena.</li>
+<ul>
 <br>
 Steps to run this app:-
 <ul>
