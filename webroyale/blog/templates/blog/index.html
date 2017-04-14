@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+{% block title %}Posts{% endblock %}
+{% block content %}
+    
+
+    
+    <hr>
+    {% if posts %}
+        <ul>
+        {% for p in posts %}
+            <h3><li><a href="{% url 'blog:view_post' p.id %}">{{ p.title }}</a></li></h3>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no Posts.</p>
+    {% endif %}
+
+
+{% endblock %}
+
+

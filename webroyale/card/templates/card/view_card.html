@@ -1,0 +1,15 @@
+{% extends 'card/base.html' %} 
+{% block head_title %}{% endblock %}
+{% block title %}{{card.name }}{% endblock %}
+
+{% block content %}
+	<h3>
+    Category-<a href="{% url 'card:view_type' card.typ_id %}">{{ card.typ }}</a><br>
+    Elixir-{{ card.elixir }}<br>
+    Rarity-<a href="{% url 'card:view_rarity' card.rarity_id %}">{{ card.rarity }}</a><br>
+    Arena-<a href="{% url 'card:view_arena' card.arena.number %}">{{ card.arena }}</a><br>
+    <i>Description-{{ card.description }}<br></i>
+    
+    </h3>
+
+{% endblock %}

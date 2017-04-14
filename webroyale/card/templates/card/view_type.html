@@ -1,0 +1,19 @@
+{% extends 'card/base.html' %} 
+{% block head_title %} {% endblock %}
+{% block title %}{{type.name }}{% endblock %}
+
+{% block content %}
+	<h3>
+    {%if cards %}
+    	<ul>
+    	{% for c in cards %}
+    		<li><a href="{% url 'card:view_card' c.id %}">{{ c.name }}</a></li>
+    	{% endfor %}
+    	</ul>
+    {% else %}
+    	There is no cards of this Type.
+    {% endif %}
+    </h3>
+    
+
+{% endblock %}

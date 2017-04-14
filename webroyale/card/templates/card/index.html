@@ -1,0 +1,18 @@
+{% extends 'card/base.html' %}
+{% block title %}Cards{% endblock %}
+{% block content %}
+    
+    
+    <hr>
+    {% if cards %}
+        <ul>
+        {% for c in cards %}
+            <h3><li><a href="{% url 'card:view_card' c.id %}">{{ c.name }}</a></li></h3>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no Cards.</p>
+    {% endif %}
+    
+
+{% endblock %}
