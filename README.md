@@ -1,4 +1,5 @@
 # WebRoyale
+<hr>http://sahilwebroyale.pythonanywhere.com/blog/</h1>
 <h2>My love for ClashRoyale is reflected in this website.</h2>
 <h3>
 This WebApp consists of:-
